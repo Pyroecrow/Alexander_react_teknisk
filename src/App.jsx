@@ -1,16 +1,24 @@
-import { useState } from "react";
-import Count from "./Components/Count";
-
+import './App.css';
+import Count from './Components/Count';
+import CountDown from './Components/CountdownComponent';
+import { useState } from 'react';
+ 
 function App() {
+ 
   const [count, setCount] = useState(0);
-
+  const [countDown, setCountDown] = useState(10);
+ 
   return (
-    <div>
+    <>
       <Count count={count} setCount={setCount} />
       <Count count={count} setCount={setCount} />
       <Count count={count} setCount={setCount} />
-    </div>
+ 
+ 
+      <CountDown countdown={countDown} setCountDown={setCountDown} />
+ 
+    </>
   );
 }
-
+ 
 export default App;

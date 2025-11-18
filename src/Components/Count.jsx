@@ -1,10 +1,12 @@
 function Count({ count, setCount }) {
   return (
     <div>
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Øk</button>
+      <p>Your count is {count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        {count}
+      </button>
     </div>
   );
 }
-
-export default Count;
+ 
+export default Count
